@@ -1,6 +1,6 @@
 name: prptest
 description: ''
-version: 0.0.1
+version: '1.0'
 author: vvdakhode@gmail.com
 language: sql
 buildSystem: ''
