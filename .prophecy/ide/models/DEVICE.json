@@ -1,0 +1,82 @@
+{
+  "id" : "DEVICE",
+  "metainfo" : {
+    "label" : "DEVICE",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "DEVICE##MMPZhSKn" : {
+      "id" : "DEVICE##MMPZhSKn",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "DEVICE",
+        "x" : -80,
+        "y" : -220,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM DEVICE_RAW\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ezcMIUqb",
+          "slug" : "DEVICE_RAW"
+        } ],
+        "outputs" : [ {
+          "id" : "VINHzSlG",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "85wYlI_Vj39hP53n1iQv7" : {
+      "id" : "85wYlI_Vj39hP53n1iQv7",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "DEVICE_RAW",
+        "slug" : "DEVICE_RAW",
+        "x" : -480,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "DEVICE_RAW",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "d42Ix979lVYH03YuNB7tk",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "-pNgdiR-duJ1-nCAcjR7m",
+    "source" : "85wYlI_Vj39hP53n1iQv7",
+    "sourcePort" : "d42Ix979lVYH03YuNB7tk",
+    "target" : "DEVICE##MMPZhSKn",
+    "targetPort" : "ezcMIUqb"
+  } ],
+  "component" : "Model"
+}

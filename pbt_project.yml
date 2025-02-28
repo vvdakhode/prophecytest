@@ -1,0 +1,200 @@
+name: prptest
+description: ''
+version: 0.0.1
+author: vvdakhode@gmail.com
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-02-28 06:50:53'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/DEVICE:
+    name: DEVICE
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: DEVICEID
+        dataType:
+          type: Number
+      - name: DEVICENAME
+        dataType:
+          type: String
+      - name: DEVICETYPE
+        dataType:
+          type: String
+      - name: MANUFACTURER
+        dataType:
+          type: String
+      - name: MODELNUMBER
+        dataType:
+          type: String
+      - name: SERIALNUMBER
+        dataType:
+          type: String
+      - name: MANUFACTURINGDATE
+        dataType:
+          type: Date
+      - name: EXPIRATIONDATE
+        dataType:
+          type: Date
+      - name: DEVICESTATUS
+        dataType:
+          type: String
+      - name: DEVICEVERSION
+        dataType:
+          type: Float
+      - name: SOFTWAREVERSION
+        dataType:
+          type: Float
+      - name: REGULATORYAPPROVAL
+        dataType:
+          type: String
+      - name: APPROVALDATE
+        dataType:
+          type: Date
+      - name: LASTMAINTENANCEDATE
+        dataType:
+          type: Date
+      - name: NEXTMAINTENANCEDATE
+        dataType:
+          type: Date
+      - name: WARRANTYSTARTDATE
+        dataType:
+          type: Date
+      - name: WARRANTYENDDATE
+        dataType:
+          type: Date
+      - name: PURCHASEDATE
+        dataType:
+          type: Date
+      - name: PURCHASEPRICE
+        dataType:
+          type: Float
+      - name: BUSINESSUNIT
+        dataType:
+          type: String
+    description: null
+    author: vvdakhode@gmail.com
+    files:
+    - models/DEVICE.sql
+    - .prophecy/ide/models/DEVICE.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-02-28 11:01:20'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: vvdakhode@gmail.com
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-02-28 06:50:55'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/DEVICE_RAW:
+    name: DEVICE_RAW
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: DEVICEID
+        dataType:
+          type: Number
+      - name: DEVICENAME
+        dataType:
+          type: String
+      - name: DEVICETYPE
+        dataType:
+          type: String
+      - name: MANUFACTURER
+        dataType:
+          type: String
+      - name: MODELNUMBER
+        dataType:
+          type: String
+      - name: SERIALNUMBER
+        dataType:
+          type: String
+      - name: MANUFACTURINGDATE
+        dataType:
+          type: Date
+      - name: EXPIRATIONDATE
+        dataType:
+          type: Date
+      - name: DEVICESTATUS
+        dataType:
+          type: String
+      - name: DEVICEVERSION
+        dataType:
+          type: Float
+      - name: SOFTWAREVERSION
+        dataType:
+          type: Float
+      - name: REGULATORYAPPROVAL
+        dataType:
+          type: String
+      - name: APPROVALDATE
+        dataType:
+          type: Date
+      - name: LASTMAINTENANCEDATE
+        dataType:
+          type: Date
+      - name: NEXTMAINTENANCEDATE
+        dataType:
+          type: Date
+      - name: WARRANTYSTARTDATE
+        dataType:
+          type: Date
+      - name: WARRANTYENDDATE
+        dataType:
+          type: Date
+      - name: PURCHASEDATE
+        dataType:
+          type: Date
+      - name: PURCHASEPRICE
+        dataType:
+          type: Float
+      - name: BUSINESSUNIT
+        dataType:
+          type: String
+    description: null
+    author: vvdakhode@gmail.com
+    files:
+    - seeds/DEVICE_RAW.csv
+    createdAt: '2025-02-28 11:03:33'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: vvdakhode@gmail.com
+  createdAt: '2025-02-28 06:50:53'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

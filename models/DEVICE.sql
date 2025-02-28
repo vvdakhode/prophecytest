@@ -1,0 +1,11 @@
+WITH DEVICE_RAW AS (
+
+  SELECT * 
+  
+  FROM {{ ref('DEVICE_RAW')}}
+
+)
+
+SELECT *
+
+FROM DEVICE_RAW
